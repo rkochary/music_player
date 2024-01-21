@@ -1,0 +1,10 @@
+.songRow {
+    flex: 1;
+    text-align: left;
+    border:1px solid grey;
+    padding:10px;
+}
+
+.play-btn:hover {
+    color:grey
+}
