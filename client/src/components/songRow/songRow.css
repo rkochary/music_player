@@ -1,10 +1,55 @@
 .songRow {
-    flex: 1;
+    /* flex: 1;
     text-align: left;
-    border:1px solid grey;
-    padding:10px;
+    padding:10px;*/
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    gap: 10px;
+    width: 50%;
+    color:#bd8bdc;
+    border-radius: 10px;
+    
+} 
+
+
+    @keyframes colorAnimation {
+        from{
+            color:#bd8bdc;
+            background-color: #28053e;;
+        }
+        to{
+            color:#8E08B2;
+            background-color:#4E1CAE ;
+            font-size: larger;
+        }
+    }
+
+    .songRow:hover {
+        animation: colorAnimation 1s
+    }
+
+.image {
+    aspect-ratio: 0.98;
+    object-fit: contain;
+    object-position: center;
+    width: 50px;
+    overflow: hidden;
+    max-width: 20%;
+    
 }
 
-.play-btn:hover {
-    color:grey
+.text-utils {
+    gap:15px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
 }
+
+.play-btn {
+
+}
+

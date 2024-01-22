@@ -1,0 +1,28 @@
+.playingSong-container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content:center;
+    height: 100px;
+    border: 1px solid red;
+    align-items: center;
+
+}
+
+.playingSong {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.play-btn {
+    font-size: 3em;
+}
+
+.back-btn {
+    font-size: 3em;
+}
+
+.frwrd-btn {
+    font-size: 3em;
+}
