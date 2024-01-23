@@ -1,16 +1,31 @@
 .App {
-
-    background-color: #28053e;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 9px 0 20px 24px;
+  background-color: #28053e;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 9px 0 20px 24px;
+  color: white; /* Default text color */
 }
 
+@media screen and (max-width: 480px) {
+  .App{
+    background-color: aqua;
+  }
+}
 
-@media screen and (max-widh:480px){
-    .App {
-      color: aqua;
-    }
+/* Additional media queries for different devices */
+
+/* For tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .App {
+    /* Styles for tablets */
+  }
+}
+
+/* For desktops */
+@media screen and (min-width: 769px) {
+  .App {
+    /* Styles for desktops */
+  }
 }

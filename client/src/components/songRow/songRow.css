@@ -1,7 +1,4 @@
 .songRow {
-    /* flex: 1;
-    text-align: left;
-    padding:10px;*/
     display: flex;
     flex-direction: row;
     margin-top: 50px;
@@ -16,7 +13,7 @@
     @keyframes colorAnimation {
         from{
             color:#bd8bdc;
-            background-color: #28053e;;
+            background-color: #28053e;
         }
         to{
             color:#8E08B2;

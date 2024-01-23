@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FaPlay } from "react-icons/fa";
 import { FaPause } from "react-icons/fa";
-import styles from "../songRow/songRow.css"
+import  "./songRow.css"
 
 const SongRow = ({songName,artist,isPlaying,handleIsPlaying,id,img}) => {
 

@@ -1,4 +1,3 @@
-import data from './data.json'
 import './App.css';
 import SongList from './components/songList/SongList';
 

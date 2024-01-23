@@ -1,8 +1,16 @@
 .songList {
     display: flex;
     flex-direction: column;
+    padding-bottom: 120px;   
+}
 
-    
+footer {
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 

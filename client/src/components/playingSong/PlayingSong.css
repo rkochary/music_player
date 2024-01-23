@@ -1,28 +1,67 @@
 .playingSong-container {
     display: flex;
     flex-direction: column;
-
     justify-content:center;
     height: 100px;
-    border: 1px solid red;
     align-items: center;
-
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for darkness */
+    z-index: 999; /* Ensure the overlay is on top of other elements */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    animation: fadeInUp 0.5s ease-in-out;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 20px;
+    max-width: 85%;
 }
 
 .playingSong {
     display: flex;
     width: 100%;
     justify-content: space-around;
+    position: fixed;
 }
 
-.play-btn {
-    font-size: 3em;
-}
-
-.back-btn {
-    font-size: 3em;
-}
-
+.play-btn,
+.back-btn,
 .frwrd-btn {
-    font-size: 3em;
+  color:#dcc2ec;;
+  font-size: 3em;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); Less shadow for the icons */
+}
+
+.songName {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    gap:10px;
+}
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Adjust initial Y position for animation */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes colorAnimation {
+    from{
+        color:#dcc2ec;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    to{
+        color:#d994ecb5;
+        background-color:#2114389c ;
+        font-size: larger;
+    }
+}
+
+.playingSong-container:hover {
+    animation: colorAnimation 2s
 }
