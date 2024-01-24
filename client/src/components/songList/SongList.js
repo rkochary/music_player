@@ -20,9 +20,26 @@ const SongList = () => {
     }
 
     const handleActivetedPlayingAll = () => {
-      console.log(playingAll);
-      setPlayingAll(!playingAll)
-    }
+      setPlayingAll(!playingAll);
+      if (playingAll) {
+        clearTimeout(playingAllTimeout);
+      } else {
+        playAllSongs(0);
+      }
+    };
+  
+    let playingAllTimeout;
+  
+    const playAllSongs = (index) => {
+      if (index < songList.length) {
+        handleIsPlaying(songList[index].trackNumber);
+        playingAllTimeout = setTimeout(() => {
+          playAllSongs(index + 1);
+        }, 3000);
+      } else {
+        setPlayingAll(false);
+      }
+    };
 
     const handlePlayNextSong = () => {
       if (!playingSong) {

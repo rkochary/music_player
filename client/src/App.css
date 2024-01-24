@@ -8,24 +8,26 @@
   color: white; /* Default text color */
 }
 
+
 @media screen and (max-width: 480px) {
   .App{
     background-color: aqua;
   }
 }
 
-/* Additional media queries for different devices */
 
-/* For tablets */
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .App {
-    /* Styles for tablets */
+      display: flex;
+      flex-direction: row;
+      
+      background-color: antiquewhite;
   }
 }
 
-/* For desktops */
 @media screen and (min-width: 769px) {
   .App {
-    /* Styles for desktops */
+    background-color: #28053e;
   }
 }
+

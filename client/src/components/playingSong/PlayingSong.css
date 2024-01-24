@@ -12,6 +12,7 @@
     padding: 20px;
     margin: 0 20px;
     max-width: 85%;
+    color: #dcc2ec;
 }
 
 .playingSong {
@@ -73,4 +74,20 @@
 
 .playingSong-container:hover {
     animation: colorAnimation 2s
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .playingSong-container {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 100px;
+    align-items:center;
+    color: #dcc2ec;
+    padding: 10px;
+    margin:0px;
+    align-self: flex-start;
+
+}
+
 }
