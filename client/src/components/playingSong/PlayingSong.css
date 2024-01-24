@@ -4,8 +4,8 @@
     justify-content:center;
     height: 100px;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for darkness */
-    z-index: 999; /* Ensure the overlay is on top of other elements */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
     animation: fadeInUp 0.5s ease-in-out;
     border-radius: 10px;
@@ -24,9 +24,18 @@
 .play-btn,
 .back-btn,
 .frwrd-btn {
-  color:#dcc2ec;;
+  color:#dcc2ec;
   font-size: 3em;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); Less shadow for the icons */
+}
+
+.restart-btn{
+  color:rgb(119, 89, 119);
+  font-size: 1em;
+}
+
+.restart-btn-active{
+  color:#dcc2ec;
+  
 }
 
 .songName {
@@ -42,7 +51,7 @@
 @keyframes fadeInUp {
     from {
       opacity: 0;
-      transform: translateY(20px); /* Adjust initial Y position for animation */
+      transform: translateY(20px);
     }
     to {
       opacity: 1;
@@ -53,7 +62,7 @@
   @keyframes colorAnimation {
     from{
         color:#dcc2ec;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.218);
     }
     to{
         color:#d994ecb5;

@@ -7,6 +7,7 @@ import "./SongList.css"
 const SongList = () => {
 
     const [songList,setSongList] = useState(data)
+    const [playingAll,setPlayingAll] = useState(false)
 
     const playingSong = songList.find(song => song.isPlaying);
 
@@ -16,6 +17,11 @@ const SongList = () => {
       song.trackNumber === id ? { ...song, isPlaying: !song.isPlaying } : { ...song, isPlaying: false }
       );
       setSongList(updatedSongs); 
+    }
+
+    const handleActivetedPlayingAll = () => {
+      console.log(playingAll);
+      setPlayingAll(!playingAll)
     }
 
     const handlePlayNextSong = () => {
@@ -53,8 +59,24 @@ const SongList = () => {
              <SongRow img={song.img} key={song.trackNumber} id={song.trackNumber} handleIsPlaying={handleIsPlaying}  songName={song.songName} isPlaying={song.isPlaying} artist={song.artistName} i={song.trackNumber}/>
         )}
         </ul>
-        <footer>{playingSong?<PlayingSong song={playingSong} handlePlayNextSong={handlePlayNextSong} handlePlayPrevSong={handlePlayPrevSong} handleIsPlaying={handleIsPlaying} />:
-        <PlayingSong song={songList[0]} handleIsPlaying={handleIsPlaying}/> }</footer>
+        <footer>
+        {playingSong ?
+         <PlayingSong
+           song={playingSong}
+           playingAll={playingAll}
+           handleActivetedPlayingAll={handleActivetedPlayingAll} 
+           handlePlayNextSong={handlePlayNextSong} 
+           handlePlayPrevSong={handlePlayPrevSong} 
+           handleIsPlaying={handleIsPlaying} 
+           /> :
+         <PlayingSong
+           song={songList[0]} 
+           playingAll={playingAll} 
+           handleActivetedPlayingAll={handleActivetedPlayingAll}
+           handlePlayNextSong={handlePlayNextSong} 
+           handlePlayPrevSong={handlePlayPrevSong} 
+           handleIsPlaying={handleIsPlaying}/> }
+        </footer>
         
     </div>
   )
