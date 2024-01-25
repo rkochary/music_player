@@ -5,13 +5,13 @@
   flex-direction: column;
   margin: 0 auto;
   padding: 9px 0 20px 24px;
-  color: white; /* Default text color */
+
 }
 
 
 @media screen and (max-width: 480px) {
   .App{
-    background-color: aqua;
+
   }
 }
 
@@ -20,8 +20,7 @@
   .App {
       display: flex;
       flex-direction: row;
-      
-      background-color: antiquewhite;
+
   }
 }
 

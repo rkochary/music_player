@@ -12,7 +12,7 @@ const PlayingSong = ({song,handleIsPlaying,handlePlayNextSong,handlePlayPrevSong
 
   return (
 <div className='playingSong-container'>
-    <div className='playingSong'>
+
       <div className='back-btn'>
         <IoPlayBackSharp onClick={() => handlePlayPrevSong()} />
       </div>
@@ -29,11 +29,12 @@ const PlayingSong = ({song,handleIsPlaying,handlePlayNextSong,handlePlayPrevSong
       <div className='frwrd-btn'>
         <IoPlayForwardSharp onClick={() => handlePlayNextSong()} />
       </div> 
-    </div>
       <div className='songName'>
-        <div>{song?.artistName}</div>
-        <div>{song?.songName}</div>
-        </div>     
+        {song?.artistName}
+        {' '}
+        {song?.songName}
+      </div>     
+
 </div>
   )
 }

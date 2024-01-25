@@ -1,4 +1,4 @@
-.songRow {
+.songRow{
     display: flex;
     flex-direction: row;
     margin-top: 50px;
@@ -6,7 +6,6 @@
     width: 50%;
     color:#bd8bdc;
     border-radius: 10px;
-    
 } 
 
 
@@ -42,8 +41,49 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 }
+
+.text-utils-active {
+    gap:15px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .songRow{
+        border:1px solid #bd8bdc;
+        padding: 10px;
+    }
+
+    .songRow:hover{
+        background-color: #b326db;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .text-utils-active {
+        gap:15px;
+        color:rgba(204, 202, 74, 0.716);
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @keyframes colorAnimation {
+        from{
+            color:#bd8bdc;
+            background-color: #28053e;
+        }
+        to{
+            color:#8E08B2;
+            background-color:#4E1CAE ;
+        }
+    }
+  }
 
 

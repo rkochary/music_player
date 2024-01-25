@@ -6,11 +6,11 @@ import  "./songRow.css"
 const SongRow = ({songName,artist,isPlaying,handleIsPlaying,id,img}) => {
 
   return (
-    <li className='songRow'>
+    <li className={'songRow'}>
 
           {img? <img className='image' src={img}/> : null}       
 
-  <div className='text-utils'>
+  <div className={isPlaying?' text-utils-active':'text-utils '}>
   <span className='play-button' onClick={() => handleIsPlaying(id)}> 
         {
             isPlaying?

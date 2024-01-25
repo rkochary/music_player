@@ -1,7 +1,7 @@
 .playingSong-container {
     display: flex;
-    flex-direction: column;
-    justify-content:center;
+    flex-direction: row;
+    justify-content:space-around;
     height: 100px;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
@@ -12,20 +12,15 @@
     padding: 20px;
     margin: 0 20px;
     max-width: 85%;
-    color: #dcc2ec;
+    color: #bd8bdc;
+    
 }
 
-.playingSong {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    position: fixed;
-}
 
 .play-btn,
 .back-btn,
 .frwrd-btn {
-  color:#dcc2ec;
+  color:#bd8bdc;
   font-size: 3em;
 }
 
@@ -35,7 +30,7 @@
 }
 
 .restart-btn-active{
-  color:#dcc2ec;
+  color:#bd8bdc;
   
 }
 
@@ -79,15 +74,20 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .playingSong-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content:center;
-    height: 100px;
-    align-items:center;
-    color: #dcc2ec;
-    padding: 10px;
-    margin:0px;
-    align-self: flex-start;
+    width: 50%;
+  }
+    @keyframes colorAnimation {
+      from{
+          color:#dcc2ec;
+          background-color: rgba(0, 0, 0, 0.218);
+      }
+      to{
+          color:#d994ecb5;
+
+      }
+  }
 
 }
 
-}

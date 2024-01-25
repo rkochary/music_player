@@ -1,8 +1,15 @@
 .songList {
     display: flex;
     flex-direction: column;
-    padding-bottom: 120px;   
+    padding-bottom: 120px;
+  
 }
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
 
 footer {
     color: white;
@@ -18,13 +25,16 @@ footer {
 
   @media screen and (min-width: 481px) and (max-width: 768px) {
     .songList {
-       display: flex;
-       flex-direction: column;
-      
-    }
-    .footer{
-       color: black;
-    }
+      display: flex;
   }
+  .list{
+    margin-left: 200px;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+  }
+}
 
 
