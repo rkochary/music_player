@@ -7,7 +7,6 @@ In the project directory, you can run:
 
 ### `npm start`
 
-I used only React and CSS,didn't use any libraries as you told in subject.The page is responsive.Did't have time to finish all project and make it better.
-
+I used only React and CSS and didn't use any libraries as you mentioned in the subject.The page is responsive. Didn't have time to finish all the projects and make it better.
 
 
